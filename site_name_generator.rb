@@ -1,6 +1,19 @@
 require 'whois'
 
-words = ["date", "dash", "breaker", "runaway", "escape", "bail", "phone", "call", "relationship", "blinddate", "dinner", "peaceout"]
+words = %[
+date
+dash
+breaker
+runaway
+escape
+bail
+phone
+call
+relationship
+blinddate
+dinner
+peaceout
+]
 
 results = words.permutation(2).map do |w1,w2|
   domain = "#{w1}#{w2}.com"
